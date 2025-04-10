@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">YourLogo</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                
+            </ul>
+           <div class="header-right">
+                <span class="phone-number">Contact</span>
+                <a href="#" class="btn">+91 9876543210</a>
+            </div>
+        </nav>
+        
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Creative Digital Agency</h1>
+            <p>We provide innovative solutions for businesses.</p>
+            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn btn-secondary">Request a Consult</a>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-item">Launch Business</div>
+        <div class="feature-item">Online Support Team</div>
+        <div class="feature-item">Time Management</div>
+    </section>
+    
+    <!-- About Section -->
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We have 15 years of experience in digital solutions.</p>
+    <!-- Updated Read More button -->
+    <a href="#" class="btn img-btn">
+         Read More
+    </a>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-item">
+        <a href="#" class="btn img-btn">
+     User Experience
+        </a>
+    </div>
+    <div class="service-item">
+        <a href="#" class="btn img-btn">
+            Creative Design
+        </a>
+    </div>
+    <div class="service-item">Retina Ready</div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.querySelector('.about .btn');
+        const hiddenContent = document.createElement('div');
+        hiddenContent.className = 'hidden-content';
+        hiddenContent.innerHTML = '<p>Here is more information about our experience and services in digital solutions. We aim to bring the best to your business!</p>';
+        document.querySelector('.about').appendChild(hiddenContent);
+    
+        btn.addEventListener('click', function() {
+            hiddenContent.style.display = hiddenContent.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+    </script>
+    
+</body>
+</html>

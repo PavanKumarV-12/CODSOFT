@@ -1,0 +1,59 @@
+/* General Styles */ 
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+/* Navbar */ nav { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; background: #ff8a00; 
+    padding: 15px; color: white; 
+} 
+.nav-links { 
+    list-style: none;
+    display: flex; 
+     gap: 20px; 
+    }
+.nav-links a { 
+        
+        text-decoration: none; color: white; } 
+.btn { background: white; 
+    color: #ff8a00; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    text-decoration: none; }
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .phone-number {
+        font-size: 16px;
+        color: white;
+    }
+    
+/* Hero Section */
+.hero {
+     /* Align the image to the left top */
+    background-size: 100% 100%; /* Stretch the image to cover the entire container */
+    height: 400px; /* Set the height of the hero section */
+    display: flex; /* Flexbox for centering text content */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    text-align: center; /* Center text inside the content */
+    color: white; /* Set text color */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+  }
+  
+  
+  
+/* Features */ .features { display: flex; justify-content: space-around; padding: 50px; background: linear-gradient(90deg, #ff8a00, #ff2d75); color: white; }
+
+/* About Section */ .about { text-align: center; padding: 50px; }
+
+/* Services Section */ .services { display: flex; justify-content: space-around; padding: 50px; background: #f4f4f4; }
